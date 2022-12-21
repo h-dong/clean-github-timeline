@@ -51,6 +51,10 @@ footer {
   height: 1rem;
 }
 
+footer > a {
+  color: antiquewhite;
+}
+
 .center {
   text-align: center;
 }
