@@ -1,0 +1,29 @@
+{
+  "name": "Clean GitHub Timeline",
+  "version": "1.0.0",
+  "author": "Hao Dong",
+  "description": "Hide unwanted PR timeline events in GitHub",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://github.com/*"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_title": "Clean GitHub Timeline",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "/images/eye-48.png",
+      "96": "/images/eye-96.png",
+      "128": "/images/eye-128.png"
+    }
+  },
+  "icons": {
+    "48": "/images/eye-closed-48.png",
+    "96": "/images/eye-closed-96.png",
+    "128": "/images/eye-closed-128.png"
+  }
+}
